@@ -1,0 +1,44 @@
+.banner {
+    background: transparent linear-gradient(182deg, #006AB5 0%, #10346F 100%) 0% 0% no-repeat padding-box;
+}
+
+.banner__container {
+    display: flex;
+    min-height: calc(100vh - 90px);
+    align-items: center;
+    padding-left: 150px;
+}
+
+.banner__left {
+    flex: 1;
+    color: #fff;
+    text-align: left;
+}
+
+.banner__left  h2{ 
+    font-size: 32px;
+    line-height: 50px;
+}
+
+.banner__left  p{ 
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.banner__left  button{ 
+    min-height: 40px;
+    min-width: 159px;
+    font-size: 16px;
+    border-radius: 0px;
+    border: none;
+    margin-top: 40px;
+    color: #DC5916;
+ }
+
+.banner__right {
+    flex: 1;
+}
+
+.banner__right img { 
+    max-width: 100%;
+}
