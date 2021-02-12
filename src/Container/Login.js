@@ -19,9 +19,9 @@ const Login = () => {
                 <input className="content__container-input"  type="password" id="user_pwd" ></input>
             </div>
             <div className="form__button-outer">
-            <button className="form__button" >Login</button>
+            <button className="form__button" >Login</button> 
             </div>
-            {/* onClick={submitLogin} */}
+            {/* onClick={submitLogin}*/}
             
         </div>
     )
