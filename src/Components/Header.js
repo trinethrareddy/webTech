@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -48,22 +48,25 @@ export default class Header extends React.Component {
             <header className="header">
                <ul className="header__nav-list">
                    <li className="header__list-item">
-                        <Link to="/" className="header__item-link header__item-link--active">Home</Link>
+                        <NavLink to="/home" className="header__item-link" activeClassName="header__item-link--active">Home</NavLink>
                    </li>
                    <li className="header__list-item">
-                        <Link className="header__item-link" to="/about">About</Link>
+                        <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/about">About</NavLink>
+                   </li>
+                   {/* <li className="header__list-item">
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/products">Products</NavLink>
                    </li>
                    <li className="header__list-item">
-                       <Link className="header__item-link" to="/products">Products</Link>
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/services">Services</NavLink>
                    </li>
                    <li className="header__list-item">
-                       <Link className="header__item-link" to="/services">Services</Link>
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/career">Careers</NavLink>
+                   </li> */}
+                   <li className="header__list-item">
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/contact-us">Contact us</NavLink>
                    </li>
                    <li className="header__list-item">
-                       <Link className="header__item-link" to="/career">Careers</Link>
-                   </li>
-                   <li className="header__list-item">
-                       <Link className="header__item-link" to="/contact-us">Contact us</Link>
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/login">Login</NavLink>
                    </li>
                </ul>
             </header>

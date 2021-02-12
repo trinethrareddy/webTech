@@ -8,8 +8,10 @@ import Careers from './Container/Careers';
 import ContactUs from './Container/ContactUs';
 import Products from './Container/Products';
 import AboutUs from './Container/AboutUs';
+//import Login from 
+import Login from  './Container/Login.js';
 
-import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, Link, Redirect} from 'react-router-dom';
 
 
 function App () {
@@ -21,7 +23,10 @@ function App () {
             <Header/>
 
             <Switch>
-              <Route exact path="/" component={HomePage}></Route>
+            <Route exact path = "/">
+              <Redirect to = "/home" />
+            </Route>
+              <Route path="/home" component={HomePage}></Route>
               <Route path="/about">
                 <AboutUs/>
               </Route>
@@ -39,6 +44,10 @@ function App () {
 
               <Route path="/services">
                 <Services/>
+              </Route>
+
+              <Route path="/login">
+                <Login/>
               </Route>
             </Switch>
           </div>
