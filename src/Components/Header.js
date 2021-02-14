@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/header.css';
+// import '../styles/login.css';
 
 import {NavLink} from 'react-router-dom';
 
@@ -67,6 +68,11 @@ export default class Header extends React.Component {
                    </li>
                    <li className="header__list-item">
                        <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/login">Login</NavLink>
+                   </li>
+                   <li className="header__list-item">
+                       <button className="form__buttons">
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/signup">Signup</NavLink>
+                       </button>
                    </li>
                </ul>
             </header>

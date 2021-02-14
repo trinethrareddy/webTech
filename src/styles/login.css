@@ -20,7 +20,7 @@
     /* display: center; */
 }
 
-.content__container-text{
+/* .content__container-text{
     background-color: white;
     color:black;
     padding: 5px 10px;
@@ -28,7 +28,7 @@
     font-weight: 200;
     margin-bottom: 14px;
     display: inline-block;
-}
+} */
 
 .content__container-input{
     width: 100%;
@@ -45,12 +45,25 @@
     color: white;
     /* padding: 15px 32px; */
     text-align: center;
-    text-decoration: none;
+    /* text-decoration: none; */
     display: inline-block;
     font-size: 16px;
     min-width: 80px;
     min-height: 40px;
     border-radius: 20px;
 
+}
+
+.content__container-pwd{
+    float: left;
+    margin-right: 40px;
+}
+
+.content__container-cfmpwd{
+    float: left;
+}
+
+.content__container-form1{
+    display: inline-block;
 }
 

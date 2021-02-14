@@ -3,7 +3,16 @@ import React from 'react';
 
 import '../styles/login.css';
 
-const Login = () => {
+// function SubmitLogin() {
+//     console.log('hi');
+// }
+
+function Login(){
+
+    const submitLogin = function(){
+        console.log('sd');
+    }
+    
     return (
         <div className="content__box">
             <h1 className="content__container">Log In to developedbyed | Creative Programming and Design Courses</h1>
@@ -19,12 +28,13 @@ const Login = () => {
                 <input className="content__container-input"  type="password" id="user_pwd" ></input>
             </div>
             <div className="form__button-outer">
-            <button className="form__button" >Login</button> 
+            <button className="form__button" onClick={submitLogin}>Login</button> 
             </div>
-            {/* onClick={submitLogin}*/}
-            
+            {/* onClick={submitLogin}*/}  
         </div>
     )
+
+    
 }
 
 export default Login;

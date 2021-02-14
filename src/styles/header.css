@@ -30,3 +30,19 @@
 .header__item-link--active {
     color: #006AB5;
 }
+
+.form__buttons{
+   
+
+    background-color: #94c0df;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 80px;
+    min-height: 40px;
+    border-radius: 20px;
+
+}

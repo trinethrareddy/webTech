@@ -10,6 +10,7 @@ import Products from './Container/Products';
 import AboutUs from './Container/AboutUs';
 //import Login from 
 import Login from  './Container/Login.js';
+import SignUp from  './Container/SignUp.js';
 
 import {BrowserRouter, Switch, Route, Link, Redirect} from 'react-router-dom';
 
@@ -48,6 +49,9 @@ function App () {
 
               <Route path="/login">
                 <Login/>
+              </Route>
+              <Route path="/signup">
+                <SignUp/>
               </Route>
             </Switch>
           </div>
