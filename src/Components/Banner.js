@@ -11,7 +11,7 @@ export default class Banner extends React.Component {
     render() {
         return (
             <div className="banner">
-               <div className="banner__container">
+               <div className="banner__container"> 
                    <div className="banner__left">
                        <h2>IT Products & services provider</h2>
                        <p>
@@ -21,7 +21,7 @@ export default class Banner extends React.Component {
                    </div>
                    <div className="banner__right">
                        <img src={bannerImg} alt="banner"/>
-                   </div>
+                   </div>  
                </div>
             </div>
         )

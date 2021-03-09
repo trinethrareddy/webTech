@@ -11,11 +11,22 @@ import AboutUs from './Container/AboutUs';
 //import Login from 
 import Login from  './Container/Login.js';
 import SignUp from  './Container/SignUp.js';
+import AllCourses from './Components/AllCourses.js'
+import MyCourses from './Components/MyCourses.js';
 
 import {BrowserRouter, Switch, Route, Link, Redirect} from 'react-router-dom';
 
 
 function App () {
+
+//   const submitLogin1 = () =>{
+//     // e.preventDefault();
+//     // nameEl.focus();
+//      //console.log(nameEl.current.value,passwordEl.current.value );
+//      console.log("TEST");
+
+//  }
+
   return (
     <div className="App">
       {/* <HomePage/> */}
@@ -39,8 +50,17 @@ function App () {
               <Route path="/career">
                 <Careers/>
               </Route>
+
               <Route path="/contact-us">
                 <ContactUs/>
+              </Route>
+
+              <Route path="/courses">
+                <AllCourses/>
+              </Route>
+
+              <Route path="/my-courses">
+                <MyCourses/>
               </Route>
 
               <Route path="/services">
@@ -48,7 +68,7 @@ function App () {
               </Route>
 
               <Route path="/login">
-                <Login/>
+                 <Login />{/*click={submitLogin1} */}
               </Route>
               <Route path="/signup">
                 <SignUp/>

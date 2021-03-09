@@ -1,0 +1,72 @@
+    .coursecards {
+        background-color: #f7f7f7;
+        box-shadow: 0px 1px #faf0f3;
+        border: 1px solid black;
+        border-radius: 9px;
+        cursor: pointer;
+        margin: 20px;
+        height: 390px;
+        /* position: relative; */
+        max-width: 30%;
+    }
+
+    .coursecards:hover .coursecards__title{
+        color: #e0255d;
+    }
+
+    .coursecards:hover{
+        border-color: #e0255d;
+    }
+
+    /* .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    } */
+
+    .coursecards .coursecards__img- {
+        overflow: hidden;
+        max-height: 208px;
+    }
+
+    .coursecards__outer{
+        float: left;
+    }
+
+    .coursecards .coursecards__img- .coursecards__img-box {
+        display: block;
+        margin: auto;
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        border-bottom: 1px solid #ededed;
+        width: 100%;
+        object-fit: contain;
+        /* float: left; */
+    }
+
+
+    .coursecards .coursecards__title {
+        color: #2b3636;
+        line-height: 25px;
+        padding: 16px 16px 4px 16px;
+        font-weight: bold;
+        font-size: 18px;
+        max-height: 65px;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    .coursecards__desc{
+        text-align: center;
+    }
+
+    .coursecards__info{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+
+    .coursecards__content-wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+    }

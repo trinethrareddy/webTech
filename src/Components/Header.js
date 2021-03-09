@@ -67,6 +67,12 @@ export default class Header extends React.Component {
                        <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/contact-us">Contact us</NavLink>
                    </li>
                    <li className="header__list-item">
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/courses">Courses</NavLink>
+                   </li>
+                   <li className="header__list-item">
+                       <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/my-courses">My Courses</NavLink>
+                   </li>
+                   <li className="header__list-item">
                        <NavLink className="header__item-link" activeClassName="header__item-link--active" to="/login">Login</NavLink>
                    </li>
                    <li className="header__list-item">
